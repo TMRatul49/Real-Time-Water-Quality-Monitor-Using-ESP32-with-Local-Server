@@ -35,7 +35,7 @@ An IoT-based smart water quality monitoring system using an **ESP32** and multip
 
 > The following diagram shows how each sensor and display module connects to the ESP32:
 
-📷 **[circuit.png]** – stored in the repo, displays full schematic (uploaded already).
+📷 **[Water Quality Monitor Updated Diagram.png]** – stored in the repo, displays full schematic (uploaded already).
 
 ---
 
