@@ -93,6 +93,7 @@ An IoT-based smart water quality monitoring system using an **ESP32** and multip
 
 ## 📂 Project Structure
 
+```text
 water-quality-monitor/
 ├── circuit.png
 ├── esp32-code/
@@ -105,7 +106,8 @@ water-quality-monitor/
 │       └── style.css
 └── README.md
 
+
 ## 🤖 Built By
 
-Made with 💡 by @TMRatul49
-📧 Contact: tmmehrabhasan@gmail.com
+Made with 💡 by [@TMRatul49](https://github.com/TMRatul49)  
+📧 Contact: [tmmehrabhasan@gmail.com](mailto:tmmehrabhasan@gmail.com)
