@@ -105,7 +105,7 @@ water-quality-monitor/
 │   └── static/
 │       └── style.css
 └── README.md
-
+```
 
 ## 🤖 Built By
 
