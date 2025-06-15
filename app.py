@@ -2,11 +2,13 @@
 from flask import Flask, render_template, jsonify
 import firebase_admin
 from firebase_admin import credentials, db
+import os, json
 
 app = Flask(__name__)
 
 # Firebase Initialization
-cred = credentials.Certificate("serviceAccountKey.json")  # Replace with your path
+cred_info = json.loads(os.environ["GOOGLE_CREDENTIALS_JSON"])
+cred = credentials.Certificate(cred_info)
 firebase_admin.initialize_app(cred, {
     'databaseURL': 'https://water-quality-monitor-cdf19-default-rtdb.asia-southeast1.firebasedatabase.app/'  # Replace with your database URL
 })
