@@ -2,8 +2,6 @@
 
 An IoT-based smart water quality monitoring system using an **ESP32** and multiple analog/digital sensors to measure **pH**, **TDS**, **turbidity**, and **temperature**. The sensor data is uploaded to **Firebase Realtime Database** and visualized on a live **Python Flask dashboard**.
 
-![Circuit Diagram](Water Quality Monitor Updated Diagram.png)
-
 ---
 
 ## 🚀 Features
@@ -36,6 +34,7 @@ An IoT-based smart water quality monitoring system using an **ESP32** and multip
 > The following diagram shows how each sensor and display module connects to the ESP32:
 
 📷 **[Water Quality Monitor Updated Diagram.png]** – stored in the repo, displays full schematic (uploaded already).
+![Water Quality Monitor Updated Diagram](https://github.com/user-attachments/assets/ff339e02-d21d-47f0-886e-3d34ee10531f)
 
 ---
 
@@ -66,33 +65,36 @@ An IoT-based smart water quality monitoring system using an **ESP32** and multip
 
 ## 🐍 Flask Dashboard
 
-Install dependencies:
+1. Install dependencies:
+   ```bash
+   pip install flask firebase-admin
 
-bash
-pip install flask firebase-admin
-Add your serviceAccountKey.json (Firebase Admin SDK) to the project root.
+2. Add your serviceAccountKey.json (Firebase Admin SDK) to the project root.
 
-Run the app:
+3. Run the app:
+   ```bash
+   python app.py
 
-bash
+4. Access the dashboard in your browser at:
+   ```bash
+   http://localhost:5000
 
-python app.py
-Access the dashboard in your browser at http://localhost:5000
 
 ## 🧪 Sensor Calibration Tips
 
-pH: Use buffer solutions (pH 4.00, 7.00, 10.00) for accurate mapping.
+- pH: Use buffer solutions (pH 4.00, 7.00, 10.00) for accurate mapping.
 
-TDS: Test with known solutions (e.g., 500 ppm water).
+- TDS: Test with known calibration solutions (e.g., 500 ppm).
 
-Turbidity: Check with clear and cloudy water to set thresholds.
+- Turbidity: Compare readings with clean and cloudy water to tune your thresholds.
 
-DS18B20: Should be plug-n-play accurate.
+- Temperature (DS18B20): Should work reliably out of the box.
+
 
 ## 📂 Project Structure
 
 water-quality-monitor/
-├── Water Quality Monitor Updated Diagram.png
+├── circuit.png
 ├── esp32-code/
 │   └── water_monitor.ino
 ├── flask-dashboard/
@@ -105,4 +107,5 @@ water-quality-monitor/
 
 ## 🤖 Built By
 
-Made with 💡 by T. M. Mehrab Hasan — Turning water into data one drop at a time.
+Made with 💡 by @TMRatul49
+📧 Contact: tmmehrabhasan@gmail.com
